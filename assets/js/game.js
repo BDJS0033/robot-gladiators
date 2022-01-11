@@ -52,8 +52,14 @@ if (playerHealth <= 0) {
     playerMoney = playerMoney - 2;
     }
     // if no (false), ask question again by running fight() agin
-  } else {
-  }
-}
+    else {
+      fight();
+    }
+    // if player did not chose 1 or 2 in prompt
+} else {
+    window.alert("You need to pick a valid option. Try again!");
+    }
+};
 
+// run fight function to start game
 fight();
